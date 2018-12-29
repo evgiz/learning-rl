@@ -6,7 +6,7 @@ The state is stationary, and consists of k probabilities of a reward.
 The actor attempts to maximize its reward, while exploring the action space.
 Exploration rate is defined by epsilon.
 
-Sigve Røkenes
+Sigve Rokenes
 December, 2018
 """
 
