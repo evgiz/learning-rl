@@ -19,13 +19,13 @@ The actor learns to play blackjack near optimally after ~ 5000 games of experien
 
 ```python
 # State-action estimation
-for every s, a in experience:
-	G = reward + future reward after s
+for s, a, r in experience:
+	G = r + total_reward_after_s
 	returns[(s,a)].append(G)
 	q(s,a) = mean(returns[(s,a)])
 	
 # Policy estimation...
-for every s in experience:
+for s, _, _ in experience:
 	policy(s) = argmax(q(s,a))
 ```
 
