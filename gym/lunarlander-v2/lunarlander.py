@@ -3,12 +3,12 @@
 Author: Sigve Rokenes
 Date: January, 2019
 
-This script trains a DQN actor to land on a goal
+This script trains a DQN actor to land a spaceship
 in the OpenAI LunarLander-v2 gym environment.
 
 The algorithm converges after about 1500 episodes, and achieved
 an average score of 266 points over 100 consecutive non-training runs
-after 4000 episodes of training.
+after 4950 episodes of training.
 
 To achieve this I used the following parameters:
 
