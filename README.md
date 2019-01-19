@@ -48,6 +48,24 @@ This will run 10 rendered episodes of the pretrained model as illustrated by the
 
 **Dependencies:** Tensorflow, numpy, gym
 
+### CartPole-v1 (Policy Gradient Ascent)
+
+<img src="gym/cartpole-v1/cartpole.gif" width=400>
+
+I solved the (discrete action space) cartpole environment using policy gradient ascent. See `./gym/cartpole-v1/*`.
+The policy is estimated using a neural network which is updated directly without the use of a value function. The policy outputs the probability of each action for a given state (in this case the probabilities of moving left or right). The policy is trained in an offline fashion using real discounted rewards.
+
+The problem was solved after 180 episodes in one trial, but the learning is quite unstable. This is a weakness with simple policy ascent, since the rewards are averaged for all actions over the episode and thus the model requires a large number of examples to converge. The results are significantly more stable after ~ 500 episodes however.
+
+Included with the code is a model trained for 300 episodes achieving an average score of almost 500. To test it, execute:
+
+`python policy_gradient.py solved`
+
+References for this project include the RL book by Sutton & Barto and [this](https://medium.freecodecamp.org/an-introduction-to-policy-gradients-with-cartpole-and-doom-495b5ef2207f) great article on policy gradients by Thomas Simonini.
+
+
+
+
 
 
 
