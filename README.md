@@ -6,6 +6,8 @@
 
 Repo for keeping scripts written while researching the field. Public in case others interested in reinforcement learning are looking for code solutions. All scripts written in Python 3.6. Dependencies will probably be numpy and/or tensorflow for most scripts. Check the specific implementations for imports. All code released under the MIT license, so go wild!
 
+See my website [evgiz.net](http://evgiz.net) for more extensive writeups of key projects. 
+
 ### Stationary k-armed bandit
 Q learning in a stationary state space of probabilities length *k*, with a discrete action space *k*. Uses average reward over time for action value estimation. See `./bandit/k_bandit_stationary.py`
 
@@ -45,6 +47,8 @@ Included with the code is the best model I achieved after a couple discrete trai
 `python lunarlander.py solved`
 
 This will run 10 rendered episodes of the pretrained model as illustrated by the gif.
+
+Read the full writeup of the project [here](http://evgiz.net/article/2019/02/02/).
 
 **Dependencies:** Tensorflow, numpy, gym
 
