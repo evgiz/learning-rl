@@ -67,7 +67,11 @@ Included with the code is a model trained for 300 episodes achieving an average 
 
 References for this project include the RL book by Sutton & Barto and [this](https://medium.freecodecamp.org/an-introduction-to-policy-gradients-with-cartpole-and-doom-495b5ef2207f) great article on policy gradients by Thomas Simonini.
 
+### BipedalWalker-v2 (Proximal Policy Optimization)
 
+<img src="gym/bipedalwaker-v2/biped.gif">
+
+I have not solved this environment yet. I have achieved adequate walking policies using proximal policy optimization. Read my writeup on this project [here](http://evgiz.net/article/2019/02/10/).
 
 
 
